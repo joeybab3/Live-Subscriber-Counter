@@ -5,14 +5,12 @@ This requires Brian Lough's YoutubeAPI Library, the ArduinoJSON Library, and lib
 
 More Info Here: http://www.joeybabcock.me/blog/projects/arduino-esp8266-live-subscriber-display/
 
-Pinout is is follows: 
+ESP8266 Pins: 
 
-GND->GND
-
-VCC->3v3(on wemos d1 mini)
-
-DIN->D7
-
-CS->D4
-
-CLK->D5
+|LED Matrix |	ESP8266                     |
+|-----------|-----------------------------|
+|VCC        |	+3.3V                       |
+|GND	      | GND                         |
+|DIN	      |D7                           |
+|CS	        |D4                           |
+|CLK	      |D5                           |
