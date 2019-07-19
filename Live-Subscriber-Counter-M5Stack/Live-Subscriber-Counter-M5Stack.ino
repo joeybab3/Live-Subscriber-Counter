@@ -1,5 +1,5 @@
 //By Joey Babcock
-//Find diagram and more here: http://www.joeybabcock.me/blog/projects/arduino-esp8266-live-subscriber-display/
+//Find diagram and more here: https://www.joeybabcock.me/blog/projects/arduino-esp8266-live-subscriber-display/
 
 #include <M5Stack.h>
 #include <WiFiMulti.h>
@@ -17,21 +17,21 @@ WiFiMulti wifiMulti;
 #define CHANNEL_ID "UC7SHEJBjzSz7Xm9M4d93mOQ" // makes up the url of channel(Find yours here: 
 WiFiClientSecure client;
 YoutubeApi api(API_KEY, client);
-int api_mtbs = 10000; //mean time between api requests
+int api_mtbs = 10000; //time between api requests
 long api_lasttime;   //last time api request has been done
 long subs = 0;
 
 void setup() {
 
-  // initialize the M5Stack object
+    // initialize the M5Stack object
     m5.begin();
-    //m5.startupLogo();
     m5.lcd.setBrightness(100);
     m5.Lcd.setFont();
     m5.Lcd.fillScreen(BLACK);
     m5.Lcd.setCursor(10, 10);
     m5.Lcd.setTextColor(WHITE);
     m5.Lcd.setTextSize(2);
+  
     // We start by connecting to a WiFi network
     int count = 0;
     Serial.println("Connecting to wifi...");
